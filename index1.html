@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+             <li><a href="#projects">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Python Developer and Intern</p>
+            <h1>Hi,this is <span>Keerthi</span><br>from India</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/background.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>"With my proven track record of exceeding targets and a strong dedication to achieving results, I am confident I can bring significant value to your team."
+                    Greetings! I'm passionate about Python programming and have honed my skills through dedicated self-study and practical application. My one-month stint as an HR intern provided invaluable insights into the hiring process, enhancing my ability to understand the human element of technology.
+                    
+                    I believe that talent knows no bounds, and experience is just one facet of potential. My proficiency in Python has equipped me to tackle complex problems and innovate in dynamic environments. I'm eager to leverage my technical acumen and adaptability to contribute meaningfully to your team.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>artificial intelligence</li>
+                        <><span>Web Development</span>
+                        <li><span>machine learning</span><br>python</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023 NOV- JAN 2024</span><br>AI/ML intern at JMedia Corp</li>
+                        <li><span>2023 SEP- 2023 OCT</span><br>summer intern at internshala</li>
+                        <li><span>2022 AUG</span><br>volunteer at Suvidha Foundation</li>
+                        <li><span>2021 APR- 2021 SEP</span><br>Internship at DevTown</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022-2026</span><br>Artificial Intelligence and Machine Learning at Vignan's institute of engineeering for women</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projets</h1>
+        <div class="Projects">
+            <div class="Project 1">
+                <img src="images/game project.png">
+                <div class="layer">
+                    <h3>TIC TAC TOE using python</h3>
+                    <p>This is my basic first project in my first semester called tic tac toe using python</p>
+                    <a href="https://github.com/saikeerthi2929"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="Project 2">
+                <img src="images/chatbot project.jpg">
+                <div class="layer">
+                    <h3>a chatbot</h3>
+                    <p>This chatbot name alicia can help you with some basic questions. This project was done in python</p>
+                    <a href="https://github.com/saikeerthi2929"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="Project 3">
+                <img src="images/work3.jpg">
+                <div class="layer">
+                    <h3>Music Player</h3>
+                    <p>This plays music that are downloaded in your system or a device</p>
+                    <a href="https://github.com/saikeerthi2929"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="Project 4">
+                <img src="text to speech project.jpg">
+                <div class="layer">
+                    <h3>Music Player</h3>
+                    <p>type your text and convert them into speech </p>
+                    <a href="https://github.com/saikeerthi2929"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>whistlepamulapati@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>+91 9985533283</p>
+                <div class="social-icons">
+    <a href="https://www.linkedin.com/in/keerthi-sai-897408275/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/resume.pdf" download class="btn btn2">Download resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = '< https://www.linkedin.com/in/keerthi-sai-897408275/>'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+<script>
+    const scriptURL = '<https://script.google.com/macros/s/AKfycbx201maw4HdeZdUn9dbj9boEV6a_9NCrZJ9B-2CXQVkFMTyEXCbzu_oGR5FA0E6MuO7Pg/exec>'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</html>
